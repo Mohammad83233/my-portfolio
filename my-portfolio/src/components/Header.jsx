@@ -10,7 +10,7 @@ const Header = () => {
       {/* Restored the name back to the header */}
       <div className="logo">
         <a href="#hero">
-          <h1>NISHAM</h1>
+          <h1>{firstName}<span>NISHAM</span></h1>
         </a>
       </div>
       

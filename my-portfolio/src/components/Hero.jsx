@@ -7,7 +7,7 @@ const Hero = () => {
     <section id="hero" className="hero-section">
       {/* New: The large profile picture */}
       <img 
-        src="/images/profile.jpg" 
+        src={`${process.env.PUBLIC_URL}/images/profile.jpg`}
         alt="Mohammad Nisham VM Profile"
         className="hero-profile-img"
       />
