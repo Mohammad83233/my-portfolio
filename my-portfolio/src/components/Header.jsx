@@ -1,4 +1,4 @@
-// src/components/Header.jsx (Restored Name)
+// src/components/Header.jsx
 import React from 'react';
 import { PROFILE_DATA } from '../data';
 
@@ -7,7 +7,6 @@ const Header = () => {
 
   return (
     <header className="header-nav">
-      {/* Restored the name back to the header */}
       <div className="logo">
         <a href="#hero">
           <h1>{firstName}<span>NISHAM</span></h1>

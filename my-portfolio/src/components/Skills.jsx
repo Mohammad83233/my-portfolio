@@ -1,3 +1,4 @@
+// src/components/Skills.jsx
 import React from 'react';
 import { SKILLS_DATA } from '../data'; 
 
@@ -13,12 +14,12 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills-section">
-      <h2>Technical Skills</h2>
+      <h2 className="section-title">Technical <span>Skills</span></h2>
+      <p className="section-subtitle">Technologies & tools I work with</p>
       
       <div className="technical-skills-grid">
-        {/* Iterate through skill categories and their skills */}
         {Object.entries(skillsByCategory).map(([category, skills]) => (
-          <div key={category} className="skill-category">
+          <div key={category} className="skill-category glass-card">
             <h3>{category}</h3>
             <ul className="skill-list">
               {skills.map((skill, index) => (
@@ -31,14 +32,16 @@ const Skills = () => {
         ))}
       </div>
 
-      <h2>Soft Skills</h2>
-      <ul className="soft-skill-list">
-        {SKILLS_DATA.soft.map((skill, index) => (
-          <li key={index} className="soft-skill-item">
-            {skill}
-          </li>
-        ))}
-      </ul>
+      <div className="soft-skills-container">
+        <h3 className="soft-skills-title">Soft Skills</h3>
+        <ul className="soft-skill-list">
+          {SKILLS_DATA.soft.map((skill, index) => (
+            <li key={index} className="soft-skill-item">
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
