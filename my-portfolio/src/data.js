@@ -13,7 +13,7 @@ export const PROFILE_DATA = {
   availability: 'Immediate',
 
   // Social Links
-  linkedin: 'www.linkedin.com/in/mohammad-nisham-b151022b4',
+  linkedin: 'https://www.linkedin.com/in/mohammad-nisham-b151022b4',
   github: 'https://github.com/mohammad83233',
 
   certifications: [
